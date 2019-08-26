@@ -7,3 +7,8 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+it('contains navbar', () => {
+  const navbar = document.createElement('nav');
+  expect(navbar);
+})
