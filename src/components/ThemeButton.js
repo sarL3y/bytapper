@@ -14,7 +14,7 @@ export default function ThemeButton() {
                 color: theme.color,
             }}
         >
-            Toggle for {isDark ? 'white' : 'black'}
+            Toggle for {isDark ? 'Light' : 'Dark'}
         </button>
     );
 }

@@ -1,13 +1,23 @@
 import React, { useState, useEffect } from 'react';
 
+const fontColor = {
+    dark: '#37474f',
+    light: '#dcedc8'
+}
+
+const backgroundColor = {
+    dark: '#37474f',
+    light: '#dcedc8'
+}
+
 const themes = {
     dark: {
-        backgroundColor: '#353b37',
-        color: '#d5f5de'
+        backgroundColor: backgroundColor.dark,
+        color: fontColor.light
     },
     light: {
-        backgroundColor: '#d5f5de',
-        color: '#353b37'
+        backgroundColor: backgroundColor.light,
+        color: fontColor.dark
     }
 }
 
