@@ -1,0 +1,30 @@
+@import 'src/index';
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+    background-color: $background-color-mid;
+
+    // &:hover {
+    //     height: 350px;
+    //     width: 475px;
+    // }
+}

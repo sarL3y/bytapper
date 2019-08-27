@@ -1,23 +1,32 @@
 import React, { useState, useEffect } from 'react';
 
 const fontColor = {
-    dark: '#37474f',
-    light: '#dcedc8'
+    darkOnLight: '#37474f',
+    lightOnDark: '#fbfbf8'
 }
 
 const backgroundColor = {
+    darkest: '#1c313a',
     dark: '#37474f',
-    light: '#dcedc8'
+    mid: '#455a64',
+    light: '#718792',
+    lightest: '#fbfbf8',
 }
 
 const themes = {
     dark: {
-        backgroundColor: backgroundColor.dark,
-        color: fontColor.light
+        backgroundColorDarkest: backgroundColor.darkest,
+        backgroundColorDark: backgroundColor.dark,
+        backgroundColorMid: backgroundColor.mid,
+        colorDarkOnLight: fontColor.darkOnLight,
+        color: fontColor.lightOnDark
     },
     light: {
-        backgroundColor: backgroundColor.light,
-        color: fontColor.dark
+        backgroundColorDarkest: backgroundColor.lightest,
+        backgroundColorDark: backgroundColor.lightest,
+        backgroundColorMid: backgroundColor.mid,
+        color: fontColor.darkOnLight,
+        colorLightOnDark: fontColor.lightOnDark
     }
 }
 
@@ -46,6 +55,7 @@ function ThemeProvider({ children }) {
     }
 
     const theme = isDark ? themes.dark : themes.light;
+
 
     return (
         <ThemeContext.Provider value={{ theme, isDark, toggleTheme }}>

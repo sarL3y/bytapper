@@ -5,6 +5,7 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Container from './components/Container';
+import Footer from './components/Footer';
 
 export default function App() {
 	const { theme } = useContext(ThemeContext);
@@ -14,12 +15,14 @@ export default function App() {
 			role='main'
 			className='App'
 			style={{
-                backgroundColor: theme.backgroundColor,
+                backgroundColor: theme.backgroundColorDarkest,
 				color: theme.color,
+				transition: `all .7s ease-in-out`
 			}}
 		>
 			<Navbar />
 			<Container />
+			<Footer />
 		</main>
 	);
 };

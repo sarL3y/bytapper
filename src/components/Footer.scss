@@ -1,0 +1,29 @@
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+
+    &:nth-child() {
+        flex: 1;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        margin: 10px;
+    
+        &:focus {
+            color: inherit;
+        }
+    }
+}
