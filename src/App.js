@@ -17,7 +17,7 @@ export default function App() {
 			style={{
                 backgroundColor: theme.backgroundColorDarkest,
 				color: theme.color,
-				transition: `all .7s ease-in-out`
+				transition: `all .5s ease-in-out`
 			}}
 		>
 			<Navbar />

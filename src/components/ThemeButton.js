@@ -1,20 +1,25 @@
 import React, { useContext } from 'react';
 
 import { ThemeContext } from "../context/ThemeContext";
+import { ReactComponent as SunIcon } from '../svg/Sun_Icon.svg';
+
+import './ThemeButton.scss';
 
 export default function ThemeButton() {
-    const { theme, isDark, toggleTheme } = useContext(ThemeContext)
+    const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
         <button
             type='button'
             onClick={toggleTheme}
+            className="theme-toggle-button"
             style={{
-                backgroundColor: theme.backgroundColor,
+                backgroundColor: theme.backgroundColorDarkest,
                 color: theme.color,
+                transition: `all .5s ease-in-out`
             }}
         >
-            Toggle for {isDark ? 'Light' : 'Dark'}
+            <SunIcon  fill={theme.color} style={{ width: '20px', height: '20px' }}/>
         </button>
-    );
+    )
 }

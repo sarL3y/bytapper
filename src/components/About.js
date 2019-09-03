@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-import { ThemeContext } from '../context/ThemeContext';
+// import { ThemeContext } from '../context/ThemeContext';
 
 import './About.scss';
 
 export default function About(props) {
-    const { theme } = useContext(ThemeContext);
+    // const { theme } = useContext(ThemeContext);
 
     return (
         <div className="about-container">

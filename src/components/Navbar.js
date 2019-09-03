@@ -8,24 +8,28 @@ import ThemeButton from './ThemeButton';
 
 import './Navbar.scss';
 
-
 export default function Navbar(props) {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className="nav-wrapper">
+        <div 
+            className="nav-wrapper"
+            style={{
+                borderBottom: `1px solid ${theme.color}`
+            }}
+        >
             <nav
                 role='navigation'
                 className="nav"
                 aria-label="main navigation"
                 style={{
                     backgroundColor: theme.backgroundColor,
-                    color: theme.color,
+                    color: theme.color
                 }}
             >   
                 <div>
                     <NavLink exact to="/Home">
-                        tapper
+                        home
                     </NavLink>
                 </div>
                 <div>

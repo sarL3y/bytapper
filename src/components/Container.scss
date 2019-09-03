@@ -8,10 +8,14 @@
     min-width: 100vw;
 }
 
-.container-header {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}   
+@media all and (max-width: 600px) and (min-width: 300px) {
+    .container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-height: auto;
+        min-width: 100vw;
+        overflow: scroll;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

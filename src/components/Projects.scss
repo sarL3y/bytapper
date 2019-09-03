@@ -4,28 +4,200 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90vw;
 }
 
-.projects-header {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
+// .projects-header {
+//     display: flex;
+//     flex-direction: column;
+//     margin: 0;
+// }
 
 .projects {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    width: 90vw;
+    overflow: scroll;
 }
 
 .project-container {
-    height: 400px;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-height: 400px;
+    max-width: 300px;
+    min-height: 400px;
+    min-width: 300px;
     margin: 20px;
-    // background-color: $background-color-mid;
-    overflow: hidden;
+    padding: 0px;
     font-size: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    will-change: transition;
+
+    &:hover {    
+        img {
+            height: auto;
+            width: 80%;
+            object-fit: contain;
+            opacity: 0;
+            transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+        }
+    
+        .logos-list, .code-link, .project-description, .project-title {
+            transform: none;
+            transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+        }
+    }
+
+    .project-title {
+        padding: 10px 20px;
+        transform: translateY(100px);
+        border-radius: 2px;
+    }
+
+    > .project-description {
+        width: 90%;
+        text-align: center;
+        transform: translateY(120vh);
+    }
+
+    .code-link {
+        transform: translateY(120vh);
+    }
+
+    > .logos-list {
+        transform: translateY(120vh);
+        margin-top: 10px;
+
+        // .logo {
+        //     padding: 10px;
+        // }
+    }
+
+    >  h3 {
+        margin-top: 20px; 
+        
+        > a {
+        padding: 20px 30px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    .project-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    } 
 }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+img {
+    height: auto;
+    width: 100%;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    object-fit: contain;
+
+}
+
+// .project-grow {
+//     transition: all .175s ease-in-out;
+//     -webkit-transition: all .175s ease-in-out;
+
+//     &:hover {
+//         width: 600px;
+//         // transform: scale(1.05);
+
+//         // ~ div {
+//         //     width: 10%;
+//         // }
+//     }
+// }
+
+.project-shrink {
+    transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+
+    &:hover {
+        width: initial;
+    }
+}
+
+.project-transform {
+    transition: all .15s ease-in-out;
+
+}
+
+.hidden {
+    display: none;
+}
+
+@media all and (max-width: 600px) and (min-width: 300px) {
+
+    .projects-container {
+        width: 100vw;
+        margin-top: 20px;
+    }
+
+    .projects {
+        width: 100%;
+        overflow: scroll;
+        flex-wrap: wrap;
+
+        &:nth-child(n) {
+            margin-top: 10px;
+        }
+    }
+
+    .project-container {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // max-height: 400px;
+        // max-width: 300px;
+        // min-width: 300px;    
+        height: auto;
+        // background-color: $background-color-mid;
+        // overflow: initial;
+        // font-size: 1rem;
+        // border: 1px solid black;
+        // transition: all .175s ease-in-out;
+        // -webkit-transition: all .175s ease-in-out;
+    
+        // > p {
+        //     width: 80%;
+        // }
+    
+        // &:hover {
+        //     // flex-grow: 2;
+        //     transform: scale(1.05);
+        // }
+    }
+}

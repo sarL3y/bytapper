@@ -1,6 +1,5 @@
 .nav-wrapper {
-    padding: 5px;
-    margin: 5px;
+    padding: 5px 5px 10px 5px;
 }
 
 .nav {
@@ -16,5 +15,20 @@
 
     &:focus {
         color: inherit;
+    }
+}
+
+@media all and (max-width: 600px) and (min-width: 300px) {
+
+    .nav-wrapper {
+        padding: 10px;
+        
+    }
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100vw;
+        border: none;
     }
 }

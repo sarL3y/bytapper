@@ -17,8 +17,6 @@ export default function Container(props) {
         <div className="container"
             style={{
                 backgroundColor: theme.backgroundColorDark,
-                borderTop: `1px solid ${theme.color}`,
-                borderBottom: `1px solid ${theme.color}`,
                 transition: `all .2s ease-in-out`
             }}
         >

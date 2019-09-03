@@ -1,0 +1,36 @@
+button {
+    margin: 0;
+    padding: 0;
+    transform: translate(0px, 4px);
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:focus {
+        appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        outline: 0;
+        transition: all .2s ease-in-out;
+    }
+
+    &:hover {
+        appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        outline: 0;
+        transform: scale(1.005);
+        transition: all .2s ease-in;
+    }
+
+    &:active {
+        appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        outline: 0;
+        transition: all .2s ease-in-out;
+    }
+}

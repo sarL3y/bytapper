@@ -1,11 +1,12 @@
-import React, { useContext } from 'react';
+// import React, { useContext } from 'react';
+import React from 'react';
 
-import { ThemeContext } from '../context/ThemeContext';
+// import { ThemeContext } from '../context/ThemeContext';
 
 import './Contact.scss';
 
 export default function Contact(props) {
-    const { theme } = useContext(ThemeContext);
+    // const { theme } = useContext(ThemeContext);
 
     return (
         <div className="contact-container">
