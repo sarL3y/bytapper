@@ -1,6 +1,5 @@
-.container {
+.app-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: calc(10px + 2vmin);
@@ -8,14 +7,54 @@
     min-width: 100vw;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.page {
+    position: absolute;
+}
+  
+.page-enter {
+    opacity: 0;
+    transform: scale(1);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+}
+
+.page-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.page-exit-active {
+    opacity: 0;
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+}
+
 @media all and (max-width: 600px) and (min-width: 300px) {
-    .container {
+    .app-container {
         margin-top: 20px;
         margin-bottom: 20px;
-        min-height: auto;
         min-width: 100vw;
         overflow: scroll;
-        justify-content: flex-start;
-        align-items: flex-start;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .page {
+        position: inherit;
+        display: flex;
+        justify-content: center;
     }
 }

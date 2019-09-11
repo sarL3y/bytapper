@@ -10,12 +10,14 @@ export default function Home(props) {
 
     return (
         <div className="home-container">
-            <div className="container-left">
+            <header>
+                <h2>
+                    Hi, I'm Matt
+                </h2>
+            </header>
+            {/* <div className="container-left">
                 <header 
                     className="container-header"
-                    style={{
-                        width: '100%'
-                    }}
                 >
                     <h2>Hi, I'm Matt.</h2>
                     <h3>{`I love bringing ideas to `} 
@@ -33,22 +35,10 @@ export default function Home(props) {
             <div className="container-right">
                 <header 
                     className="container-header"
-                    style={{
-                        width: '100%'
-                    }}
                 >
-                    <h2>Hi, I'm Matt.</h2>
-                    <h3>{`I love bringing ideas to `} 
-                        <span 
-                            className="life-button" 
-                            style={{ cursor: 'pointer' }}
-                        >
-                            life
-                        </span>
-                        .
-                    </h3>
+                    <h4>View my work here, and feel free to reach out if you'd like to collaborate.</h4>
                 </header>
-            </div>
+            </div> */}
         </div>
     )
 }

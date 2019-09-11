@@ -41,7 +41,7 @@
     &:hover {    
         img {
             height: auto;
-            width: 80%;
+            width: 50%;
             object-fit: contain;
             opacity: 0;
             transition: all .4s ease-in-out;
@@ -124,7 +124,6 @@ img {
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     object-fit: contain;
-
 }
 
 // .project-grow {
