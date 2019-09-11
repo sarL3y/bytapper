@@ -182,7 +182,8 @@ img {
         // max-height: 400px;
         // max-width: 300px;
         // min-width: 300px;    
-        height: auto;
+        max-height: 320px;
+        min-height: 320px;
         // background-color: $background-color-mid;
         // overflow: initial;
         // font-size: 1rem;
@@ -198,5 +199,19 @@ img {
         //     // flex-grow: 2;
         //     transform: scale(1.05);
         // }
+
+        &:hover {    
+            img {
+                height: 0px;
+                width: 0px;
+                opacity: 0;
+                transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+            }
+        }
+    }
+
+    .project-title {
+        transform: translateY(20px);
     }
 }

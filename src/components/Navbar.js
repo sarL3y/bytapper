@@ -27,22 +27,22 @@ export default function Navbar(props) {
                     color: theme.color
                 }}
             >   
-                <div>
+                <div className="nav-grow">
                     <NavLink exact to="/Home">
                         home
                     </NavLink>
                 </div>
-                <div>
+                <div className="nav-grow">
                     <NavLink exact to="/Projects">
                         projects
                     </NavLink>
                 </div>
-                <div>
+                <div className="nav-grow">
                     <NavLink exact to="/About">
                         about
                     </NavLink>
                 </div>
-                <div>
+                <div className="nav-grow">
                     <NavLink exact to="/Contact">
                         contact
                     </NavLink>

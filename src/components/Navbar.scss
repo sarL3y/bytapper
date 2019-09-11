@@ -18,6 +18,14 @@
     }
 }
 
+.nav-grow {
+    transition: all .1s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
 @media all and (max-width: 600px) and (min-width: 300px) {
 
     .nav-wrapper {
