@@ -13,18 +13,48 @@
 
 .about {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    width: 70vw;
+    margin: 10px;
 }
 
 .about-item {
-    height: 300px;
-    width: 400px;
-    margin: 10px;
-    background-color: $background-color-mid;
+    
+    // background-color: $background-color-mid;
 
     // &:hover {
     //     height: 350px;
     //     width: 475px;
     // }
+}
+
+.headshot-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+    border-radius: 50%;
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.bio-container {
+    max-width: 500px;
+    overflow: scroll;
+    font-size: 16px;
+    margin: 10px 20px;
+    text-indent: 16px;
+}
+
+@media all and (max-width: 600px) and (min-width: 300px) {
+    .about {
+        flex-direction: column;
+        width: 90vw;
+    }
 }

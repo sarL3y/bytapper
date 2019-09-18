@@ -162,13 +162,14 @@ img {
 
     .projects-container {
         width: 100vw;
-        margin-top: 20px;
+        height: 80%;
+        margin-top: 500px;
     }
 
     .projects {
         width: 100%;
         overflow: scroll;
-        flex-wrap: wrap;
+        flex-direction: row;
 
         &:nth-child(n) {
             margin-top: 10px;
