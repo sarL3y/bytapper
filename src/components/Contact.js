@@ -7,6 +7,7 @@ import './Contact.scss';
 
 export default function Contact(props) {
     const { theme } = useContext(ThemeContext);
+    const [loading, setLoading] = useState(false);
 
     const [name, setName] = useState("");
     const [company, setCompany] = useState("");
@@ -24,10 +25,11 @@ export default function Contact(props) {
 
     function handleSubmit(e) {
         e.preventDefault();
+        setLoading(true);
         console.log('Submitting form!');
 
         setTimeout(() => {
-            setToHome(true)
+            setToHome(true);
         }, 2000);
     }
 
@@ -117,19 +119,33 @@ export default function Contact(props) {
                             />
                         </div>
                     </div>
-
-                    <button 
-                        type="submit" 
-                        className="form-submit-button" 
-                        style={{
-                            backgroundColor: theme.backgroundColorDarkest,
-                            color: theme.color,
-                            border: `1px solid ${theme.color}`
-                        }}
-                        onClick={e => console.log(contactData)}
-                    >
-                        Submit
-                    </button>
+                    {!loading ?
+                        <button 
+                            type="submit" 
+                            className="form-submit-button" 
+                            style={{
+                                backgroundColor: theme.backgroundColorDarkest,
+                                color: theme.color,
+                                border: `1px solid ${theme.color}`
+                            }}
+                            onClick={e => console.log(contactData)}
+                        >
+                            Submit
+                        </button>
+                    : (
+                        <button 
+                            type="submit" 
+                            className="form-submit-button" 
+                            style={{
+                                backgroundColor: theme.backgroundColorDarkest,
+                                color: theme.color,
+                                border: `1px solid ${theme.color}`
+                            }}
+                            onClick={e => e.preventDefault()}
+                        >
+                            Submitting
+                        </button>
+                    )}
                 </form>
             </section>
         </div>
