@@ -30,12 +30,6 @@ export default function Projects(props) {
 
     return (
         <div className="projects-container">
-            {/* <header className="projects-header">
-                <div>
-                    <h2 className="hidden">Projects</h2>
-                </div>
-            </header> */}
-
             <section className="projects">
                 <div 
                     ref={project}

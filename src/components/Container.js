@@ -44,7 +44,7 @@ function Container(props) {
                                     style={{
                                         backgroundColor: theme.backgroundColorDarkest,
                                         color: theme.color,
-                                        transition: `all .5s ease-in-out`
+                                        transition: `all .5s ease-in`
                                     }}
                                 />
                                 </div>

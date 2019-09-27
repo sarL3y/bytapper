@@ -9,12 +9,6 @@ export default function About(props) {
 
     return (
         <div className="about-container">
-            {/* <header className="about-header">
-                <div>
-                    <h2>About</h2>
-                </div>
-            </header> */}
-
             <section className="about">
                 <div className="headshot-container">
                     <div className="headshot">
