@@ -2,6 +2,31 @@
 
 .home-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tease-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    margin: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.tease {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 

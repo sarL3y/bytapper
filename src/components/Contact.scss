@@ -17,14 +17,104 @@
     flex-wrap: wrap;
 }
 
-.contact-item {
-    height: 300px;
-    width: 400px;
-    margin: 10px;
-    background-color: $background-color-mid;
+form {
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+}
 
-    // &:hover {
-    //     height: 350px;
-    //     width: 475px;
-    // }
+.form-submit-button {
+    font-size: 14px;
+    margin: 15px;
+    padding: 10px 25px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:focus {
+        appearance: none;
+        -webkit-appearance: none;
+        outline: 0;
+        transition: all .2s ease-in-out;
+    }
+
+    &:hover {
+        appearance: none;
+        -webkit-appearance: none;
+        outline: 0;
+        transform: scale(1.005);
+        transition: all .2s ease-in;
+    }
+
+    &:active {
+        appearance: none;
+        -webkit-appearance: none;
+        outline: 0;
+        transition: all .2s ease-in-out;
+    }
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font: inherit;
+    font-size: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+input, textarea {
+    font: inherit;
+    font-size: 14px;
+    margin: 28px 25px 10px;
+    padding: 20px 0px 5px 5px;
+    width: 375px;
+    display: block;
+    border: none;
+    // border-bottom: 1px solid black;
+    transition: all 0.3s ease-in-out;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+
+    &:focus::-webkit-input-placeholder {
+        font: inherit;
+        opacity: 1;
+    }
+}
+
+input {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        opacity: 1;
+
+        &::-webkit-input-placeholder {
+            transform: translateY(-20px);
+            visibility: visible !important;
+            opacity: 1;
+        }
+    } 
+}
+
+textarea {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    padding: 5px 0px 0px 6px;
+}
+
+
+@media all and (max-width: 600px) and (min-width: 300px) {
+    input, textarea {
+        font: inherit;
+        font-size: 14px;
+        margin: 25px 12px 5px;
+        width: 300px;
+    }
+
+    textarea {
+        padding: 5px 0px 0px 6px;
+    }
 }

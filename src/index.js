@@ -8,6 +8,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { ThemeProvider } from './context/ThemeContext';
 
+require('dotenv').config();
+
 ReactDOM.render(
     <BrowserRouter>
         <ThemeProvider>

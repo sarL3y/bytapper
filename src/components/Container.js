@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Router, Route, withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import { ThemeContext } from '../context/ThemeContext';
 import { CSSTransition } from 'react-transition-group';
 
@@ -7,6 +7,7 @@ import Home from './Home';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
+import Success from './Success';
 
 import './Container.scss';
 
@@ -16,6 +17,7 @@ const routes = [
     { path: '/Projects', name: 'About', Component: Projects },
     { path: '/About', name: 'About', Component: About },
     { path: '/Contact', name: 'Contact', Component: Contact },
+    { path: '/Success', name: 'Success', Component: Success }
 ];
 
 function Container(props) {
@@ -51,11 +53,6 @@ function Container(props) {
                     </Route>
                 ))}
             </div>
-            {/* <Route exact path="/" component={Home} />
-            <Route exact path="/Home" component={Home} />
-            <Route exact path="/Projects" component={Projects} />
-            <Route exact path="/About" component={About} />
-            <Route exact path="/Contact" component={Contact} /> */}
         </div>
     )
 }

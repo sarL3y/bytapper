@@ -6,11 +6,6 @@
     align-items: center;
 }
 
-.about-header {
-    display: flex;
-    flex-direction: column;
-}
-
 .about {
     display: flex;
     flex-direction: row;
@@ -18,16 +13,6 @@
     justify-content: center;
     width: 70vw;
     margin: 10px;
-}
-
-.about-item {
-    
-    // background-color: $background-color-mid;
-
-    // &:hover {
-    //     height: 350px;
-    //     width: 475px;
-    // }
 }
 
 .headshot-container {
