@@ -43,7 +43,8 @@ export default function Contact(props) {
                         style={{
                             backgroundColor: theme.backgroundColorDarkest,
                             boxShadow: `0px 0px 8px -4px ${theme.backgroundColorMid}`,
-                            borderRadius: `5px`
+                            borderRadius: `5px`,
+                            transition: `all .2s ease-in`
                         }}
                         onSubmit={handleSubmit}
                     >

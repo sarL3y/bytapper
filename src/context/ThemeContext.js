@@ -51,7 +51,6 @@ function ThemeProvider({ children }) {
         localStorage.setItem('dark', JSON.stringify(localStorageIsDark));
         // setIsDark(isDark => !isDark);
         setIsDark(localStorageIsDark);
-        console.log('toggling!');
     }
 
     const theme = isDark ? themes.dark : themes.light;
