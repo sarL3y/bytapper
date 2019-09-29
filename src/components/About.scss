@@ -51,7 +51,30 @@
     margin: 10px;
 }
 
-@media all and (max-width: 600px) and (min-width: 300px) {
+@media all and (max-width: 1000px) and (min-width: 701px) {
+    .about-container {
+        justify-self: center;
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .photo {
+        height: 180px;
+        width: 250px;
+    }
+
+    .photos-container {
+        flex-direction: row;
+        align-items: center;
+        width: 80vw;
+    }
+}
+
+@media all and (max-width: 700px) and (min-width: 300px) {
     .about-container {
         width: 100vw;
         height: 100%;

@@ -15,7 +15,7 @@ export default function Navbar(props) {
         <div 
             className="nav-wrapper"
             style={{
-                borderBottom: `1px solid ${theme.color}`
+                borderBottom: `1px solid ${theme.color}`,
             }}
         >
             <nav

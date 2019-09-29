@@ -15,7 +15,7 @@ export default function Footer(props) {
         <div 
             className="footer-wrapper"
             style={{
-                borderTop: `1px solid ${theme.color}`
+                borderTop: `1px solid ${theme.color}`,
             }}
         >
             <footer className="footer">

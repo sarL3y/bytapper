@@ -36,7 +36,6 @@ export default function Projects(props) {
                     className={`project-container ${hovered && `project-grow`}`}
                     style={{
                         backgroundColor: theme.backgroundColorDarkest,
-                        boxShadow: `0px 0px 10px -4px ${theme.backgroundColorMid}`
                     }}
                 >
                     <a href="https://bitpress-client.herokuapp.com/" target="_blank" rel="noopener noreferrer">
@@ -87,7 +86,6 @@ export default function Projects(props) {
                     className={`project-container ${hovered && `project-grow`}`}
                     style={{
                         backgroundColor: theme.backgroundColorDarkest,
-                        boxShadow: `0px 0px 10px -4px ${theme.backgroundColorMid}`
                     }}
                 >
                     <a href="https://moveout-capstone.herokuapp.com" target="_blank" rel="noopener noreferrer">
@@ -138,7 +136,6 @@ export default function Projects(props) {
                     className={`project-container ${hovered && `project-grow`}`}
                     style={{
                         backgroundColor: theme.backgroundColorDarkest,
-                        boxShadow: `0px 0px 10px -4px ${theme.backgroundColorMid}`
                     }}
                 >
                     <a href="https://sarl3y.github.io/bon-appetit/" target="_blank" rel="noopener noreferrer">

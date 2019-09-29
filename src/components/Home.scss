@@ -28,7 +28,20 @@
     flex-direction: column;
 }
 
-@media all and (max-width: 600px) and (min-width: 300px) {
+@media all and (max-width: 1000px) and (min-width: 701px) {
+    .home-container {
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .tease-container {
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 700px) and (min-width: 300px) {
     .tease-container {
         flex-direction: column;
         align-items: flex-start;

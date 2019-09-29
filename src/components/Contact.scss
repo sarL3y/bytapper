@@ -18,10 +18,11 @@
     flex-wrap: wrap;
 }
 
-form {
+.contact-form {
     border-radius: 3px;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .form-submit-button {
@@ -107,12 +108,12 @@ textarea {
 }
 
 
-@media all and (max-width: 600px) and (min-width: 300px) {
+@media all and (max-width: 700px) and (min-width: 300px) {
     input, textarea {
         font: inherit;
         font-size: 14px;
-        margin: 25px 12px 5px;
-        width: 300px;
+        margin: 20px 10px 5px;
+        width: 290px;
     }
 
     textarea {
