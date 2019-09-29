@@ -1,5 +1,5 @@
 .nav-wrapper {
-    padding: 5px 5px 10px 5px;
+    padding: 10px;
 }
 
 .nav {
@@ -28,15 +28,17 @@
 }
 
 @media all and (max-width: 700px) and (min-width: 300px) {
-
     .nav-wrapper {
-        padding: 10px;
-        
     }
+}
+
+@media all and (max-width: 700px) and (min-width: 300px) {
+    .nav-wrapper {
+    }
+
     .nav {
         display: flex;
         justify-content: space-around;
-        align-items: flex-end;
         width: 100vw;
         border: none;
     }

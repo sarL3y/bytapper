@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 5px 5px 5px;
+    padding: 10px;
 }
 
 .footer {
@@ -36,7 +36,6 @@
 }
 
 @media all and (max-width: 700px) and (min-width: 300px) {
-
     .footer-wrapper {
         padding: 10px;
         
