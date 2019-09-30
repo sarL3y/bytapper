@@ -4,15 +4,16 @@ const serverless = require('serverless-http');
 const gmailHelpers = require('./support/gmail.js');
 
 const app = express();
+const bodyParser = require('body-parser');
 // const port = process.env.PORT || 3000;
 
-app.use(express.json());
-
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
+// app.use(express.json());
+app.use(bodyParser);
+// app.use(function(req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+// });
 
 app.post('/submitForm', function(req, res) {
     const messageOptions = {
@@ -31,4 +32,4 @@ app.post('/submitForm', function(req, res) {
 // Spin it up
 // app.listen(port, console.log(`Listening on port: ${port}`));
 
-exports.handler = serverless(app);
+module.exports.handler = serverless(app);
