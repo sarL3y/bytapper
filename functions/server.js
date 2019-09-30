@@ -17,9 +17,7 @@ app.use(bodyParser.json());
 // });
 app.use('/.netlify/functions/server', router);
 
-router.post('/test', (req, res) => res.json({ postBody: req.body }));
-
-router.post('/submitForm', function(req, res) {
+router.post('/', function(req, res) {
     const messageOptions = {
         from: req.body.email,
         to: 'bytapper@gmail.com',
