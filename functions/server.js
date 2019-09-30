@@ -31,4 +31,4 @@ app.post('/submitForm', function(req, res) {
 // Spin it up
 // app.listen(port, console.log(`Listening on port: ${port}`));
 
-module.exports.handler = serverless(app);
+exports.handler = serverless(app);
