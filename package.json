@@ -17,20 +17,12 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "start": "start npm run start:client && start npm run start:server",
-    "start:client": "react-scripts start",
-    "start:server": "babel-node src/server/index.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "scripts": {
     "start": "npm-run-all --parallel start:app start:server",
     "start:app": "react-scripts start",
-    "start:server": "netlify-lambda serve functions -c ./webpack.config.js",
+    "start:server": "netlify-lambda serve functions",
     "build": "npm-run-all --parallel build:**",
     "build:app": "react-scripts build",
-    "build:functions": "netlify-lambda build functions -c ./webpack.config.js"
+    "build:functions": "netlify-lambda build functions"
   },
   "proxy": {
     "/.netlify/functions": {
