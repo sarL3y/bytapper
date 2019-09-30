@@ -2,8 +2,7 @@
   # Directory to change to before starting a build.
   # This is where we will look for package.json/.nvmrc/etc.
   command = "npm run build"
-  publish = "src"
-  functions = "lambda"
+  functions = "functions-built"
 
 
 # # Settings in the [build] context are global and are applied to all contexts

@@ -1,7 +1,7 @@
 const express = require('express');
 const serverless = require('serverless-http');
 
-const gmailHelpers = require('./gmail.js');
+const gmailHelpers = require('./support/gmail.js');
 
 const app = express();
 // const port = process.env.PORT || 3000;
