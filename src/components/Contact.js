@@ -33,12 +33,9 @@ export default function Contact(props) {
             url:"/.netlify/functions/server",
             // url: `${window.location.href}/submitForm`,
             data: {...contactData}
-        }).then((response)=>{
-            
+        }).then((response) => {
             if (response.status === 200) {
                 setToSuccess(true);
-                console.log(response);
-
             } else {
                 alert("Message failed to send.");
             }

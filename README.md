@@ -6,8 +6,11 @@ See what I'm working on and contact me to collaborate.
 
 ### Technologies
 
-React (Hooks, Context)
-Sass/SCSS
+Serverless, Single Page React App
+--(Hooks, Context, Router)
+--Sass/SCSS
+--Netlify Functions (AWS Lambda)
+--nodemailer with Gmail Oauth2
 
 
 

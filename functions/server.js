@@ -6,15 +6,8 @@ const gmailHelpers = require('./support/gmail.js');
 const app = express();
 const bodyParser = require('body-parser');
 const router = express.Router();
-// const port = process.env.PORT || 3000;
 
-// app.use(express.json());
 app.use(bodyParser.json());
-// app.use(function(req, res, next) {
-//     res.header("Access-Control-Allow-Origin", "*");
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//     next();
-// });
 app.use('/.netlify/functions/server', router);
 
 router.post('/', function(req, res) {

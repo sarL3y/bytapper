@@ -1,10 +1,6 @@
-// import React, { useContext } from 'react';
 import React from 'react';
 
-// import { ThemeContext } from '../context/ThemeContext';
-
 export default function Success(props) {
-    // const { theme } = useContext(ThemeContext);
 
     return (
         <div className="success-container">
