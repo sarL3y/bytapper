@@ -30,7 +30,7 @@ export default function Contact(props) {
 
         axios({
             method: "POST", 
-            url:"/submitForm",
+            url:"https://bytapper.com/submitForm",
             // url: `${window.location.href}/submitForm`,
             data: {...contactData}
         }).then((response)=>{
