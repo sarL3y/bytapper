@@ -16,14 +16,14 @@ export default function Success(props) {
 
                 <div className="success-right">
                     <h3>
-                        Here is a haiku
+                        Here is a haiku,
                     </h3>
                     <div className="logos-list">
                         <h4>
                             All of your contact info 
                         </h4>
                         <h4>
-                            You just sent to me
+                            Has been sent to me.
                         </h4>
                     </div> 
                 </div>

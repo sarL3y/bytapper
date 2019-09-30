@@ -17,7 +17,7 @@ const routes = [
     { path: '/Projects', name: 'About', Component: Projects },
     { path: '/About', name: 'About', Component: About },
     { path: '/Contact', name: 'Contact', Component: Contact },
-    { path: '/Success', name: 'Success', Component: Success }
+    { path: '/Success', name: 'Success', Component: Success },
 ];
 
 function Container(props) {

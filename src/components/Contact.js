@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Redirect } from 'react-router-dom';
+import axios from 'axios';
 
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -26,11 +27,22 @@ export default function Contact(props) {
     function handleSubmit(e) {
         e.preventDefault();
         setLoading(true);
-        console.log('Submitting form!');
 
-        setTimeout(() => {
-            setToSuccess(true);
-        }, 2000);
+        axios({
+            method: "POST", 
+            url:"/.netlify/functions/submitForm",
+            // url: `${window.location.href}/submitForm`,
+            data: {...contactData}
+        }).then((response)=>{
+            
+            if (response.status === 200) {
+                setToSuccess(true);
+                console.log(response);
+
+            } else {
+                alert("Message failed to send.");
+            }
+        })
     }
 
     return (
