@@ -30,7 +30,7 @@ export default function Contact(props) {
 
         axios({
             method: "POST", 
-            url:"/.netlify/functions/submitForm",
+            url:"/.netlify/lambda-src/submitForm",
             // url: `${window.location.href}/submitForm`,
             data: {...contactData}
         }).then((response)=>{

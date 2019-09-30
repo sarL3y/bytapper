@@ -18,20 +18,10 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "start": "npm-run-all --parallel start:app start:server",
-    "start:app": "react-scripts start",
-    "start:server": "netlify-lambda serve functions",
-    "build": "npm-run-all --parallel build:**",
-    "build:app": "react-scripts build",
-    "build:functions": "netlify-lambda build functions"
-  },
-  "proxy": {
-    "/.netlify/functions": {
-      "target": "http://localhost:4000",
-      "pathRewrite": {
-        "^/\\.netlify/functions": ""
-      }
-    }
+    "lambda-serve": "netlify-lambda serve lambda-src",
+    "lambda-build": "netlify-lambda build lambda-src",
+    "build": "NODE_ENV=production webpack && npm run lambda-build",
+    "dev": "NODE_ENV=development concurrently \"webpack-dev-server --content-base src/\" \"npm run lambda-serve\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^4.1.2",
     "netlify-lambda": "^1.6.3",
     "npm-run-all": "^4.1.5"
   }
