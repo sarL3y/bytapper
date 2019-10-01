@@ -24,7 +24,7 @@ router.post('/', function(req, res) {
         });
 });
 
-// Spin it up
+// No need for app.listen() with Lammbda functions
 // app.listen(port, console.log(`Listening on port: ${port}`));
 
 module.exports = app;
