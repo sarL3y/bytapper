@@ -7,6 +7,7 @@
     "body-parser": "^1.19.0",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0",
     "node-sass": "^4.12.0",
     "nodemailer": "^6.3.0",
     "react": "^16.9.0",
@@ -18,20 +19,10 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "start": "npm-run-all --parallel start:app start:server",
-    "start:app": "react-scripts start",
-    "start:server": "netlify-lambda serve functions",
+    "start": "react-scripts start",
     "build": "npm-run-all --parallel build:**",
     "build:app": "react-scripts build",
     "build:functions": "netlify-lambda build functions"
-  },
-  "proxy": {
-    "/.netlify/functions": {
-      "target": "http://localhost:4000",
-      "pathRewrite": {
-        "^/\\.netlify/functions": ""
-      }
-    }
   },
   "eslintConfig": {
     "extends": "react-app"
