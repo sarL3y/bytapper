@@ -82,6 +82,7 @@
 
     .about {
         flex-direction: column;
+        overflow: scroll;
         width: 90vw;
     }
 
@@ -97,7 +98,8 @@
     }
 
     .bio-container {
-        max-width: 299px;
+        max-width: 300px;
+        width: 100%;
         font-size: 14px;
         margin: 10px 10px;
         text-indent: 14px;
