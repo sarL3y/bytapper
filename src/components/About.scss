@@ -75,17 +75,13 @@
 
 @media all and (max-width: 700px) and (min-width: 300px) {
     .about-container {
+        display: flex;
         width: 100vw;
         height: 100%;
     }
 
     .about {
         flex-direction: column;
-        overflow: scroll;
-        width: 90vw;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
     }
 
     .photo {
@@ -97,6 +93,7 @@
         flex-direction: column;
         align-items: center;
         width: 80vw;
+        margin: 0px 0px 20px 0px;
     }
 
     .bio-container {
