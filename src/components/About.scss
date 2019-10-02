@@ -76,6 +76,7 @@
 @media all and (max-width: 700px) and (min-width: 300px) {
     .about-container {
         display: flex;
+        align-self: flex-start;
         // width: 100vw;
         // height: 100%;
     }
