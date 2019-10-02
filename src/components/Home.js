@@ -14,15 +14,15 @@ export default function Home(props) {
         <div className="home-container">
             <section className="tease-container">
                 <div className="intro">
-                    <h2>
+                    <h1>
                         Hi, I'm Matt
-                    </h2>
+                    </h1>
                 </div>
 
                 <div className="tease">
-                    <h3>
+                    <h2>
                         I work with:
-                    </h3>
+                    </h2>
                     <div className="logos-list">
                         <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                         <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
@@ -33,9 +33,9 @@ export default function Home(props) {
                         <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                         <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                     </div> 
-                    <h4>
+                    <h3>
                         See what I've done here: 
-                    </h4>
+                    </h3>
                     <h4>
                         Feel free to reach out and contact me to collaborate
                     </h4>
