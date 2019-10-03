@@ -50,11 +50,11 @@ export default function Projects(props) {
                             border: `1px solid ${theme.color}`
                         }}
                     >
-                        <h3>
+                        <h4>
                             <a href="https://bitpress-client.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                 BitPress
                             </a>
-                        </h3>
+                        </h4>
                     </div>
 
                     <div className="project-description">
@@ -62,11 +62,11 @@ export default function Projects(props) {
                     </div>
 
                     <div className="code-link">
-                        <h4>
+                        <h5>
                             <a href="https://github.com/sarL3y/bitpress-client" target="_blank" rel="noopener noreferrer">
                                 {`<code>`}
                             </a>
-                        </h4>
+                        </h5>
                     </div>
 
                     <div className="logos-list">
@@ -100,11 +100,11 @@ export default function Projects(props) {
                             border: `1px solid ${theme.color}`
                         }}
                     >
-                        <h3>
+                        <h4>
                             <a href="https://moveout-capstone.herokuapp.com" target="_blank" rel="noopener noreferrer">
                                 MoveOut
                             </a>
-                        </h3>
+                        </h4>
                     </div>
 
                     <div className="project-description">
@@ -112,11 +112,11 @@ export default function Projects(props) {
                     </div>
 
                     <div className="code-link">
-                        <h4>
+                        <h5>
                             <a href="https://github.com/sarL3y/moveout-capstone" target="_blank" rel="noopener noreferrer">
                                 {`<code>`}
                             </a>
-                        </h4>
+                        </h5>
                     </div>
 
                     <div className="logos-list">
@@ -150,11 +150,11 @@ export default function Projects(props) {
                             border: `1px solid ${theme.color}`
                         }}
                     >
-                        <h3>
+                        <h4>
                             <a href="https://sarl3y.github.io/bon-appetit/" target="_blank" rel="noopener noreferrer">
                                 Bon Appetit
                             </a>
-                        </h3>
+                        </h4>
                     </div>
 
                     <div className="project-description">
@@ -162,11 +162,11 @@ export default function Projects(props) {
                     </div>
 
                     <div className="code-link">
-                        <h4>
+                        <h5>
                             <a href="https://sarl3y.github.io/bon-appetit/" target="_blank" rel="noopener noreferrer">
                                 {`<code>`}
                             </a>
-                        </h4>
+                        </h5>
                     </div>
 
                     <div className="logos-list">

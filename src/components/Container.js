@@ -12,12 +12,12 @@ import Success from './Success';
 import './Container.scss';
 
 const routes = [
-    { path: '/', name: 'Home', Component: Home },
-    { path: '/Home', name: 'Home', Component: Home },
-    { path: '/Projects', name: 'About', Component: Projects },
-    { path: '/About', name: 'About', Component: About },
-    { path: '/Contact', name: 'Contact', Component: Contact },
-    { path: '/Success', name: 'Success', Component: Success },
+    { path: '/', name: 'home', Component: Home },
+    { path: '/home', name: 'home', Component: Home },
+    { path: '/projects', name: 'projects', Component: Projects },
+    { path: '/about', name: 'about', Component: About },
+    { path: '/contact', name: 'contact', Component: Contact },
+    { path: '/success', name: 'success', Component: Success },
 ];
 
 function Container(props) {
