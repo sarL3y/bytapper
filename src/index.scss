@@ -57,8 +57,16 @@ a {
     -webkit-transition: all .3s ease-in-out;
   }
 
+  &:active {
+    color: $link-hover-color-green;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+  }
+
   &:focus {
     color: $link-hover-color-green;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
   }
 }
 

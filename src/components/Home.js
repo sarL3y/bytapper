@@ -20,6 +20,14 @@ export default function Home(props) {
                     </h1>
                 </div>
 
+                <div 
+                    className="fancy-border mobile-hidden"
+                    style={{
+                        backgroundColor: theme.color
+                    }}
+                >
+                </div>
+
                 <div className="tease">
                     <h2>
                         I work with:
