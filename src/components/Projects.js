@@ -159,9 +159,7 @@ export default function Projects(props) {
                             }}
                         >
                             <h4>
-                                <a href="https://bitpress-client.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                     Bon Appetit
-                                </a>
                             </h4>
                         </div>
 
