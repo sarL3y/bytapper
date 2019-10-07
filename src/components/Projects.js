@@ -71,12 +71,12 @@ export default function Projects(props) {
                         </div>
 
                         <div className="project-description">
-                            <p>News articles based on the topics you want to read about.</p>
+                            <p>News articles provided for the topics you want to read about.</p>
                         </div>
 
                         <div className="code-link">
                             <h5>
-                                <a href="https://github.com/sarL3y/bitpress-client" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/sarL3y/bitpress-client" target="_blank" rel="noopener noreferrer" className="code">
                                     {`<code>`}
                                 </a>
                             </h5>
@@ -126,7 +126,7 @@ export default function Projects(props) {
 
                         <div className="code-link">
                             <h5>
-                                <a href="https://github.com/sarL3y/moveout-capstone" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/sarL3y/moveout-capstone" target="_blank" rel="noopener noreferrer" className="code">
                                     {`<code>`}
                                 </a>
                             </h5>
@@ -179,7 +179,7 @@ export default function Projects(props) {
 
                         <div className="code-link">
                             <h5>
-                                <a href="https://sarl3y.github.io/bon-appetit/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://sarl3y.github.io/bon-appetit/" target="_blank" rel="noopener noreferrer" className="code">
                                     {`<code>`}
                                 </a>
                             </h5>

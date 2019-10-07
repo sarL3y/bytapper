@@ -1,3 +1,5 @@
+@import 'src/index';
+
 .nav-wrapper {
     padding: 10px;
 }
@@ -22,6 +24,10 @@
         transform: scale(1.05);
         transition: all .1s ease-in-out;
     }
+}
+
+.active {
+    color: $link-hover-color-green !important;
 }
 
 @media all and (max-width: 700px) and (min-width: 300px) {

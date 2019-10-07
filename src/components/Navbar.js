@@ -28,22 +28,22 @@ export default function Navbar(props) {
                 }}
             >   
                 <div className="nav-grow">
-                    <NavLink exact to="/home">
+                    <NavLink activeClassName="active" exact to="/home">
                         home
                     </NavLink>
                 </div>
                 <div className="nav-grow">
-                    <NavLink exact to="/projects">
+                    <NavLink activeClassName="active" exact to="/projects">
                         projects
                     </NavLink>
                 </div>
                 <div className="nav-grow">
-                    <NavLink exact to="/about">
+                    <NavLink activeClassName="active" exact to="/about">
                         about
                     </NavLink>
                 </div>
                 <div className="nav-grow">
-                    <NavLink exact to="/contact">
+                    <NavLink activeClassName="active" exact to="/contact">
                         contact
                     </NavLink>
                 </div>
