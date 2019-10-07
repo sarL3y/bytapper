@@ -43,7 +43,7 @@ export default function Projects(props) {
                     <div 
                         className="project-info"
                         style={{
-                            background: `linear-gradient(0deg, ${theme.backgroundColorDarkest} 5%, #ffffff1a 50%)`
+                            background: `linear-gradient(0deg, ${theme.backgroundColorDarkest} 1%, #ffffff1a 50%)`
                         }}
                     >
                         <div 
@@ -96,7 +96,7 @@ export default function Projects(props) {
                     <div 
                         className="project-info"
                         style={{
-                            background: `linear-gradient(0deg, ${theme.backgroundColorDarkest} 5%, #ffffff1a 50%)`
+                            background: `linear-gradient(0deg, ${theme.backgroundColorDarkest} 1%, #ffffff1a 50%)`
                         }}
                     >
                         <div 
@@ -149,7 +149,7 @@ export default function Projects(props) {
                     <div 
                         className="project-info"
                         style={{
-                            background: `linear-gradient(0deg, ${theme.backgroundColorDarkest} 5%, #ffffff1a 50%)`
+                            background: `linear-gradient(0deg, ${theme.backgroundColorDarkest} 1%, #ffffff1a 50%)`
                         }}
                     >
                         <div 
