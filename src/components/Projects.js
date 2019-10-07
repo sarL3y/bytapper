@@ -12,6 +12,12 @@ export default function Projects(props) {
     const [hovered, setHovered] = useState(false);
     const project = useRef(null);
 
+    const infoStyle = {
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`,
+        '-webkit-background-image': `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`
+    }
+
+
     useEffect(() => {
 
         function enter() {
@@ -41,9 +47,7 @@ export default function Projects(props) {
 
                     <div 
                         className="project-info"
-                        style={{
-                            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`
-                        }}
+                        style={infoStyle}
                     >
                         <div 
                             className="project-title"
