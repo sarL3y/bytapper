@@ -14,7 +14,7 @@ export default function Projects(props) {
 
     const infoStyle = {
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`,
-        '-webkit-background-image': `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`
+        background: `-webkit-linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`  
     }
 
 
