@@ -18,19 +18,6 @@ export default function About(props) {
                     <p>It’s been a little over a year since my first commit. Since then, I’ve been absorbing the latest JavaScript frameworks (React Hooks!), expanding a freelance client base for building custom sites, and figuring out what I can make next.</p>
                 </div>
             </section>
-            <section className="photos">
-                <div className="photos-container">
-                    <div className="photo">
-
-                    </div>
-                    <div className="photo">
-                        
-                    </div>
-                    <div className="photo">
-                        
-                    </div>
-                </div>
-            </section>
         </div>
     )
 }
