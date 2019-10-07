@@ -5,7 +5,7 @@ import { ReactComponent as React2SVG } from '../svg/React_Logo_2.svg';
 import { ReactComponent as Sass2SVG } from '../svg/Sass_Logo_2.svg';
 import { ReactComponent as GoogleSVG } from '../svg/Google_Logo.svg';
 import { ReactComponent as HerokuSVG } from '../svg/Heroku_Logo.svg';
-import { ReactComponent as MochaSVG } from '../svg/Mocha_Logo.svg';
+import { ReactComponent as VsCodeSVG } from '../svg/VS_Logo.svg';
 import { ReactComponent as HtmlSVG } from '../svg/HTML_Logo.svg';
 import { ReactComponent as GithubSVG } from '../svg/Github_Logo.svg';
 import { ReactComponent as AwsSVG } from '../svg/AWS_Logo.svg';
@@ -53,7 +53,7 @@ export default function Home(props) {
                         <Sass2SVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>
                         <GoogleSVG className="logo"fill={theme.color} style={{ width: '36px', height: '36px' }}/>
                         <AwsSVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>
-                        <MochaSVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>
+                        <VsCodeSVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>
                         <GithubSVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>
                         <HerokuSVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>
                         <HtmlSVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>

@@ -86,6 +86,32 @@ code {
     monospace;
 }
 
+@media all and (max-width: 1300px) and (min-width: 701px) {
+  h1 {
+    font-size: 1.9em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.15em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
 @media all and (max-width: 700px) and (min-width: 300px) {
   h1 {
     font-size: 2em;
