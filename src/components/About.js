@@ -9,7 +9,7 @@ export default function About(props) {
             <section className="about">
                 <div className="headshot-container">
                     <div className="headshot">
-
+                        <img src="../img/me.png" alt="My beautiful headshot" />
                     </div>
                 </div>
                 <div className="bio-container">
