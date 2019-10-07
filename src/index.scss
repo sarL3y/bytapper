@@ -14,15 +14,15 @@ body {
 }
 
 h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Merriweather', 'Source Serif Pro', serif;
   font-weight: bold;
 }
 
 h5 {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Source Sans Pro', serif;
   font-weight: bold;
 }
@@ -50,6 +50,8 @@ h5 {
 a {
   text-decoration: none;
   color: inherit;
+  margin: 0px;
+  padding: 0px;
 
   &:hover {
     color: $link-hover-color-green;

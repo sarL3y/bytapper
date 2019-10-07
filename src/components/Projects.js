@@ -35,53 +35,159 @@ export default function Projects(props) {
                     ref={project}
                     className={`project-container ${hovered && `project-grow`}`}
                     style={{
-                        backgroundColor: theme.backgroundColorDarkest,
                     }}
                 >
-                    <a href="https://bitpress-client.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        <div className="project-img">
-                            <img src="../img/BitPressTopicPage.png" alt="BitPress Topic Page Screenshot" />
-                        </div>
-                    </a>
+                    <img src="../img/BitPressTopicPage.png" alt="BitPress Topic Page Screenshot" />
 
                     <div 
-                        className="project-title"
+                        className="project-info"
                         style={{
-                            border: `1px solid ${theme.color}`
+                            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`
                         }}
                     >
-                        <h4>
-                            <a href="https://bitpress-client.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                                BitPress
-                            </a>
-                        </h4>
-                    </div>
+                        <div 
+                            className="project-title"
+                            style={{
+                                border: `1px solid ${theme.color}`
+                            }}
+                        >
+                            <h4>
+                                <a href="https://bitpress-client.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                    BitPress
+                                </a>
+                            </h4>
+                        </div>
 
-                    <div className="project-description">
-                        <p>News articles based on the topics you want to read about.</p>
-                    </div>
+                        <div className="project-description">
+                            <p>News articles based on the topics you want to read about.</p>
+                        </div>
 
-                    <div className="code-link">
-                        <h5>
-                            <a href="https://github.com/sarL3y/bitpress-client" target="_blank" rel="noopener noreferrer">
-                                {`<code>`}
-                            </a>
-                        </h5>
-                    </div>
+                        <div className="code-link">
+                            <h5>
+                                <a href="https://github.com/sarL3y/bitpress-client" target="_blank" rel="noopener noreferrer">
+                                    {`<code>`}
+                                </a>
+                            </h5>
+                        </div>
 
-                    <div className="logos-list">
-                        <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
-                        <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
-                        <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
-                        <SassSVG className="logo"fill={theme.color} style={{ width: '30px', height: '30px' }}/>
-                        <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
-                        <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
-                        <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
-                        <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
-                    </div>  
+                        <div className="logos-list">
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo"fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                        </div>  
+                    </div>    
                 </div>
 
                 <div 
+                    ref={project}
+                    className={`project-container ${hovered && `project-grow`}`}
+                    style={{
+                    }}
+                >
+                    <img src="../img/MoveOutHomePage.png" alt="MoveOut Homepage Screenshot" />
+
+                    <div 
+                        className="project-info"
+                        style={{
+                            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`
+                        }}
+                    >
+                        <div 
+                            className="project-title"
+                            style={{
+                                border: `1px solid ${theme.color}`
+                            }}
+                        >
+                            <h4>
+                                <a href="https://bitpress-client.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                    MoveOut
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div className="project-description">
+                            <p>News articles based on the topics you want to read about.</p>
+                        </div>
+
+                        <div className="code-link">
+                            <h5>
+                                <a href="https://github.com/sarL3y/bitpress-client" target="_blank" rel="noopener noreferrer">
+                                    {`<code>`}
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div className="logos-list">
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo"fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                        </div>  
+                    </div>    
+                </div>
+
+                <div 
+                    ref={project}
+                    className={`project-container ${hovered && `project-grow`}`}
+                    style={{
+                    }}
+                >
+                    <img src="../img/BonAppetitSearchPage.png" alt="Bon Appetit Homepage Screenshot" />
+
+                    <div 
+                        className="project-info"
+                        style={{
+                            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`
+                        }}
+                    >
+                        <div 
+                            className="project-title"
+                            style={{
+                                border: `1px solid ${theme.color}`
+                            }}
+                        >
+                            <h4>
+                                <a href="https://bitpress-client.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                    Bon Appetit
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div className="project-description">
+                            <p>News articles based on the topics you want to read about.</p>
+                        </div>
+
+                        <div className="code-link">
+                            <h5>
+                                <a href="https://github.com/sarL3y/bitpress-client" target="_blank" rel="noopener noreferrer">
+                                    {`<code>`}
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div className="logos-list">
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo"fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <ReactSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                            <SassSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
+                        </div>  
+                    </div>    
+                </div>
+
+                {/* <div 
                     ref={project}
                     className={`project-container ${hovered && `project-grow`}`}
                     style={{
@@ -177,7 +283,7 @@ export default function Projects(props) {
                         <ReactSVG fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                         <SassSVG fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                     </div>
-                </div>
+                </div> */}
             </section>
         </div>
     )
