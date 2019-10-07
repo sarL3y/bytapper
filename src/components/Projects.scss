@@ -39,7 +39,7 @@
         transform: scale(1.05);
 
         img {
-            opacity: 0.2;
+            opacity: 0.05;
         }
     
         .logos-list, .code-link, .project-description, .project-title {
@@ -142,6 +142,7 @@
         width: 100%;
         overflow: scroll;
         flex-direction: row;
+        padding: 20px 0px;
     }
 
     .project-container {
