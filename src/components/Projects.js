@@ -13,7 +13,6 @@ export default function Projects(props) {
     const project = useRef(null);
 
     const infoStyle = {
-        background: `linear-gradient(0deg, ${theme.backgroundColorDarkest} 0%, rgba(255,0,0,0) 50%)`
         // backgroundImage: `-webkit-linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`  
     }
 
@@ -48,7 +47,9 @@ export default function Projects(props) {
 
                     <div 
                         className="project-info"
-                        style={infoStyle}
+                        style={{
+                            background: `linear-gradient(0deg, ${theme.backgroundColorDarkest} 0%, rgba(255,0,0,0) 50%)`
+                        }}
                     >
                         <div 
                             className="project-title"
