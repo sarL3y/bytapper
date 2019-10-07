@@ -43,9 +43,12 @@
         }
     
         .logos-list, .code-link, .project-description, .project-title {
-            transform: translateY(100%);
+            // transform: translateY(-100%);
             transition: all .3s ease-in-out;
             -webkit-transition: all .3s ease-in-out;
+        }
+
+        .project-info {
         }
     }
 
@@ -60,8 +63,8 @@
         position: absolute;
         bottom: 0;
         // background-color: red;
-        width: 400px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
         padding: 20px;
         overflow: hidden;
     }

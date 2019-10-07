@@ -13,8 +13,8 @@ export default function Projects(props) {
     const project = useRef(null);
 
     const infoStyle = {
-        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`,
-        background: `-webkit-linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`  
+        background: `linear-gradient(0deg, ${theme.backgroundColorDarkest} 0%, rgba(255,0,0,0) 50%)`
+        // backgroundImage: `-webkit-linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`  
     }
 
 
@@ -41,6 +41,7 @@ export default function Projects(props) {
                     ref={project}
                     className={`project-container ${hovered && `project-grow`}`}
                     style={{
+                        backgroundColor: `${theme.backgroundColorDarkest}`
                     }}
                 >
                     <img src="../img/BitPressTopicPage.png" alt="BitPress Topic Page Screenshot" />
@@ -91,15 +92,14 @@ export default function Projects(props) {
                     ref={project}
                     className={`project-container ${hovered && `project-grow`}`}
                     style={{
+                        backgroundColor: `${theme.backgroundColorDarkest}`
                     }}
                 >
                     <img src="../img/MoveOutHomePage.png" alt="MoveOut Homepage Screenshot" />
 
                     <div 
                         className="project-info"
-                        style={{
-                            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`
-                        }}
+                        style={infoStyle}
                     >
                         <div 
                             className="project-title"
@@ -143,15 +143,14 @@ export default function Projects(props) {
                     ref={project}
                     className={`project-container ${hovered && `project-grow`}`}
                     style={{
+                        backgroundColor: `${theme.backgroundColorDarkest}`
                     }}
                 >
                     <img src="../img/BonAppetitSearchPage.png" alt="Bon Appetit Homepage Screenshot" />
 
                     <div 
                         className="project-info"
-                        style={{
-                            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.backgroundColorDarkest}`
-                        }}
+                        style={infoStyle}
                     >
                         <div 
                             className="project-title"
