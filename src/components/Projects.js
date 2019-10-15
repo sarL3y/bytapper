@@ -82,7 +82,7 @@ export default function Projects(props) {
                             </h5>
                         </div>
 
-                        <div className="logos-list">
+                        <div className="tech-list">
                             <React2SVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                             <Sass2SVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                             <GoogleSVG className="logo" fill={theme.color} style={{ width: '28px', height: '28px' }}/>
@@ -132,7 +132,7 @@ export default function Projects(props) {
                             </h5>
                         </div>
 
-                        <div className="logos-list">
+                        <div className="tech-list">
                             <NodeSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                             <ExpressSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                             <MongoDbSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
@@ -185,7 +185,7 @@ export default function Projects(props) {
                             </h5>
                         </div>
 
-                        <div className="logos-list">
+                        <div className="tech-list">
                             <HtmlSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                             <CssSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>
                             <JsSVG className="logo" fill={theme.color} style={{ width: '30px', height: '30px' }}/>

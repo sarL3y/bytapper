@@ -45,7 +45,7 @@
             opacity: 0.05;
         }
     
-        .logos-list, .code-link, .project-description, .project-title {
+        .tech-list, .code-link, .project-description, .project-title {
             transform: translateY(50%);
             transition: all .3s ease-in-out;
             -webkit-transition: all .3s ease-in-out;
@@ -87,9 +87,11 @@
         transform: translateY(120vh);
     }
 
-    .logos-list {
+    .tech-list {
         transform: translateY(120vh);
         margin-top: 10px;
+        justify-content: center;
+        align-items: flex-end;
         
         .logo {
             padding: 1px;
@@ -97,6 +99,8 @@
             height: 28px;
         }
     }
+
+
 }
 
 .hidden {

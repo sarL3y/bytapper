@@ -30,17 +30,6 @@ export default function Home(props) {
                     <h1>
                         Hi, I'm Matt.
                     </h1>
-                </div>
-
-                <div 
-                    className="fancy-border mobile-hidden"
-                    style={{
-                        backgroundColor: theme.color
-                    }}
-                >
-                </div>
-
-                <div className="tease">
                     <h2>
                         I work with:
                     </h2>
@@ -59,7 +48,18 @@ export default function Home(props) {
                         <HtmlSVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>
                         <CssSVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>
                         <JquerySVG className="logo"fill={theme.color} style={{ width: '40px', height: '40px' }}/>
-                    </div> 
+                    </div>
+                </div>
+
+                <div 
+                    className="fancy-border mobile-hidden"
+                    style={{
+                        backgroundColor: theme.color
+                    }}
+                >
+                </div>
+
+                <div className="tease"> 
                     <h3>
                         Check out my latest <span><NavLink exact to="/projects">projects</NavLink></span> and
                         read a little bit <span><NavLink exact to="/about">about</NavLink></span> me. Feel free 
