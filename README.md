@@ -12,6 +12,7 @@ Serverless, Single Page React App:
 * Sass/SCSS
 * Netlify Serverless Functions (AWS Lambda)
 * Contact form with Nodemailer
+* Google Analytics
 
 
 
